@@ -2,7 +2,7 @@
 
 Pure HTML/CSS resume
 
-[![preview](./assets/preview.png)](https://raw.githubusercontent.com/glepretre/resume/main/dist/resume.pdf)
+[![preview](./assets/preview.png)](http://glepretre.github.io/resume/dist/CV%20Gilles%20Lepretre.pdf)
 
 ## Requirements
 
@@ -12,13 +12,13 @@ Pure HTML/CSS resume
 
 * Directly print from the browser
 
-**[Download PDF 📄](https://raw.githubusercontent.com/glepretre/resume/main/dist/resume.pdf)**
+**[Download PDF 📄](https://raw.githubusercontent.com/glepretre/resume/main/dist/CV%20Gilles%20Lepretre.pdf)**
 
 NB: As this is the main use case, it is designed to be printed in A4 / Portrait.
 
 ## License
 
-Copyright :copyright: 2022 Gilles Lepretre - All Rights Reserved.
+Copyright :copyright: 2022 - 2025 Gilles Lepretre - All Rights Reserved.
 
 It is public, because it needs to be.
 The HTML & CSS code and layout could be reused,  

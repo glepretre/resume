@@ -343,6 +343,10 @@ hr {
   text-decoration: none;
 }
 
+.inline-product {
+  margin: 25px;
+}
+
 .section--content ol,
 .section--content ul {
   white-space: normal;
