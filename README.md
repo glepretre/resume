@@ -18,7 +18,7 @@ NB: As this is the main use case, it is designed to be printed in A4 / Portrait.
 
 ## License
 
-Copyright :copyright: 2022 - 2025 Gilles Lepretre - All Rights Reserved.
+Copyright :copyright: 2022 - 2026 Gilles Lepretre - All Rights Reserved.
 
 It is public, because it needs to be.
 The HTML & CSS code and layout could be reused,  
