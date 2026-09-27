@@ -54,7 +54,8 @@
           "HTML", "CSS", "JavaScript", "Vue", "Vuetify", "Pinia", "Tailwind", "SCSS",
           "Playwright", "Vitest", "Linux", "Bash", "Git", "React", "TypeScript",
           "Node", "Express", "Python", "Django", "Flask", "SQL", "SQLAlchemy",
-          "Supabase", "PostgreSQL", "Docker", "GraphQL"
+          "Supabase", "PostgreSQL", "Docker", "GraphQL", "AI", "AI", "LLM", "OpenCode",
+          "OpenRouter", "GPT", "Claude", "Gemini"
         ]
       }
     </script>
@@ -64,17 +65,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
+    <link href="./style/materialdesignicons.min.css" rel="stylesheet" />
     <link href="./style/resume.css" rel="stylesheet" />
-
-    <link
-      href="http://fonts.googleapis.com/css?family=Lato"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <div id="sheet" class="A4 portrait">
@@ -90,65 +82,74 @@
           </div>
 
           <div class="sidebar--data">
-            <ul class="sidebar--list">
-              <li class="sidebar--item">
-                <span class="sidebar--label">Numéro de téléphone</span><br />
-                <strong>
-                  <a class="sidebar--link" href="tel:+33683202439"
-                    >06 83 20 24 39</a
-                  >
-                </strong>
+            <ul class="sidebar--list contact-list" aria-label="Coordonnées">
+              <li
+                class="sidebar--item contact-list--item"
+                aria-label="Numéro de téléphone : 06 83 20 24 39"
+              >
+                <i
+                  class="mdi mdi-phone-outline contact-list--icon"
+                  aria-hidden="true"
+                ></i>
+                <span class="visually-hidden">Numéro de téléphone : </span>
+                <a class="sidebar--link" href="tel:+33683202439"
+                  >06 83 20 24 39</a
+                >
               </li>
 
-              <li class="sidebar--item">
-                <span class="sidebar--label">Adresse e-mail</span><br />
+              <li
+                class="sidebar--item contact-list--item"
+                aria-label="Adresse e-mail : glepret.pro@gmail.com"
+              >
+                <i
+                  class="mdi mdi-email-outline contact-list--icon"
+                  aria-hidden="true"
+                ></i>
+                <span class="visually-hidden">Adresse e-mail : </span>
                 <a class="sidebar--link" href="mailto:glepret.pro@gmail.com"
                   >glepret.pro@gmail.com</a
                 >
               </li>
 
-              <li class="sidebar--item">
-                <span class="sidebar--label">Adresse</span><br />
+              <li
+                class="sidebar--item contact-list--item"
+                aria-label="Adresse : 69007 Lyon"
+              >
+                <i
+                  class="mdi mdi-map-marker-outline contact-list--icon"
+                  aria-hidden="true"
+                ></i>
+                <span class="visually-hidden">Adresse : </span>
                 69007 Lyon
               </li>
 
-              <li class="sidebar--item">
-                <span class="sidebar--label">Site internet</span><br />
+              <li
+                class="sidebar--item contact-list--item"
+                aria-label="Site internet : github.com/glepretre"
+              >
+                <i
+                  class="mdi mdi-web contact-list--icon"
+                  aria-hidden="true"
+                ></i>
+                <span class="visually-hidden">Site internet : </span>
                 <a class="sidebar--link" href="https://github.com/glepretre"
                   >github.com/glepretre</a
                 >
               </li>
 
-              <li class="sidebar--item">
-                <span class="sidebar--label">LinkedIn</span><br />
+              <li
+                class="sidebar--item contact-list--item"
+                aria-label="LinkedIn : linkedin.com/in/glepretre"
+              >
+                <i
+                  class="mdi mdi-linkedin contact-list--icon"
+                  aria-hidden="true"
+                ></i>
+                <span class="visually-hidden">LinkedIn : </span>
                 <a
                   class="sidebar--link"
                   href="https://www.linkedin.com/in/glepretre"
-                  >glepretre</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="sidebar--data">
-            <h3 class="sidebar--title">
-              <i class="mdi mdi-earth"></i>
-              <span>Langues</span>
-            </h3>
-
-            <ul class="sidebar--list">
-              <li class="sidebar--item">
-                <span class="sidebar--label">Français</span>
-                <span class="sidebar--item-align-right">Langue maternelle</span>
-              </li>
-              <li class="sidebar--item">
-                <span class="sidebar--label">Anglais</span>
-                <span class="sidebar--item-align-right">Courant</span>
-              </li>
-              <li class="sidebar--item">
-                <span class="sidebar--label">Italien</span>
-                <span class="sidebar--item-align-right"
-                  >Bonne connaissance</span
+                  >linkedin.com/in/glepretre</a
                 >
               </li>
             </ul>
@@ -174,6 +175,39 @@
               </li>
               <li class="sidebar--item">
                 <span class="sidebar--label">Vue / Vuetify / Pinia</span>
+                <span class="sidebar--item-align-right sidebar-skills">
+                  <div class="sidebar-skills--level">
+                    <div
+                      class="sidebar-skills--level-filler"
+                      style="width: 100%;"
+                    ></div>
+                  </div>
+                </span>
+              </li>
+              <li class="sidebar--item">
+                <span class="sidebar--label">React / TypeScript</span>
+                <span class="sidebar--item-align-right sidebar-skills">
+                  <div class="sidebar-skills--level">
+                    <div
+                      class="sidebar-skills--level-filler"
+                      style="width: 100%;"
+                    ></div>
+                  </div>
+                </span>
+              </li>
+              <li class="sidebar--item">
+                <span class="sidebar--label">Python / Django / Flask</span>
+                <span class="sidebar--item-align-right sidebar-skills">
+                  <div class="sidebar-skills--level">
+                    <div
+                      class="sidebar-skills--level-filler"
+                      style="width: 100%;"
+                    ></div>
+                  </div>
+                </span>
+              </li>
+              <li class="sidebar--item">
+                <span class="sidebar--label">Node / Express / Fastify</span>
                 <span class="sidebar--item-align-right sidebar-skills">
                   <div class="sidebar-skills--level">
                     <div
@@ -212,39 +246,6 @@
                     <div
                       class="sidebar-skills--level-filler"
                       style="width: 100%;"
-                    ></div>
-                  </div>
-                </span>
-              </li>
-              <li class="sidebar--item">
-                <span class="sidebar--label">React / TypeScript</span>
-                <span class="sidebar--item-align-right sidebar-skills">
-                  <div class="sidebar-skills--level">
-                    <div
-                      class="sidebar-skills--level-filler"
-                      style="width: 90%;"
-                    ></div>
-                  </div>
-                </span>
-              </li>
-              <li class="sidebar--item">
-                <span class="sidebar--label">Node / Express</span>
-                <span class="sidebar--item-align-right sidebar-skills">
-                  <div class="sidebar-skills--level">
-                    <div
-                      class="sidebar-skills--level-filler"
-                      style="width: 80%;"
-                    ></div>
-                  </div>
-                </span>
-              </li>
-              <li class="sidebar--item">
-                <span class="sidebar--label">Python / Django / Flask</span>
-                <span class="sidebar--item-align-right sidebar-skills">
-                  <div class="sidebar-skills--level">
-                    <div
-                      class="sidebar-skills--level-filler"
-                      style="width: 80%;"
                     ></div>
                   </div>
                 </span>
@@ -298,13 +299,79 @@
 
           <div class="sidebar--data">
             <h3 class="sidebar--title">
-              <i class="mdi mdi-human"></i>
-              <span>Centres d'intérêts</span>
+              <i class="mdi mdi-robot-outline"></i>
+              <span>IA</span>
             </h3>
 
             <ul class="sidebar--list">
               <li class="sidebar--item">
-                <span class="sidebar--label">Ma famille</span>
+                <span class="sidebar--label">OpenCode / OpenRouter</span>
+                <span class="sidebar--item-align-right">
+                  <i>
+                    <img class="sidebar--icon" src="assets/opencode-simple.svg" />
+                  </i>
+                </span>
+              </li>
+              <li class="sidebar--item">
+                <span class="sidebar--label">OpenAI / GPT / Codex</span>
+                <span class="sidebar--item-align-right">
+                  <i>
+                    <img class="sidebar--icon" src="assets/chatgpt.svg" />
+                  </i>
+                </span>
+              </li>
+              <li class="sidebar--item">
+                <span class="sidebar--label">Google / Gemini</span>
+                <span class="sidebar--item-align-right">
+                  <i>
+                    <img class="sidebar--icon" src="assets/gemini-white.svg" />
+                  </i>
+                </span>
+              </li>
+              <li class="sidebar--item">
+              <span class="sidebar--label">Anthropic / Claude Code</span>
+              <span class="sidebar--item-align-right">
+                <i>
+                  <img class="sidebar--icon" src="assets/claude-light.svg" />
+                </i>
+              </span>
+            </li>
+            </ul>
+          </div>
+
+          <div class="sidebar--data">
+            <h3 class="sidebar--title">
+              <i class="mdi mdi-earth"></i>
+              <span>Langues</span>
+            </h3>
+
+            <ul class="sidebar--list">
+              <li class="sidebar--item">
+                <span class="sidebar--label">Français</span>
+                <span class="sidebar--item-align-right">Langue maternelle</span>
+              </li>
+              <li class="sidebar--item">
+                <span class="sidebar--label">Anglais</span>
+                <span class="sidebar--item-align-right">Courant</span>
+              </li>
+              <li class="sidebar--item">
+                <span class="sidebar--label">Italien</span>
+                <span class="sidebar--item-align-right"
+                  >Bonne connaissance</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="sidebar--data">
+            <h3 class="sidebar--title">
+              <i class="mdi mdi-human"></i>
+              <span>Centres d'intérêt</span>
+            </h3>
+
+            <ul class="sidebar--list">
+              <li class="sidebar--item">
+               <span class="sidebar--label">Ma famille</span>
                 <span class="sidebar--item-align-right">
                   <i class="mdi mdi-human-male-female-child"></i>
                 </span>
@@ -352,7 +419,8 @@
                   répondre au mieux au besoin des utilisateurs. <br />
                   Rigoureux et soucieux des détails, de la conception à la mise
                   en production, je m'attache à livrer des solutions
-                  efficaces, pérennes et fiables. <br />
+                  efficaces, pérennes et fiables.
+                  J'utilise l'IA générative / agentique au quotidien depuis 2025.<br />
                   Mon expérience me permet d'aborder le changement
                   de nature du métier de développeur avec sérénité.
                   Je souhaite contribuer à des projets utiles, éthiques,
@@ -378,7 +446,7 @@
                   <div class="section--logo">
                     <img src="assets/logo-kozea.svg" />
                   </div>
-                  <div class="section--date">2022 - 2026</div>
+                  <div class="section--date">2022 - présent</div>
                   <div class="section--heading">
                     <h4>Lead développeur full-stack</h4>
                   </div>
@@ -469,7 +537,7 @@
                     &nbsp;:
                   </p>
                   <ul>
-                    <li>Réécriture de zéro : portage legacy AngularJS 🡒 Vue</li>
+                    <li>Réécriture complète : portage legacy AngularJS 🡒 Vue</li>
                     <li>
                       Design de la nouvelle expérience et de l'interface
                       utilisateur (UX/UI)
@@ -477,11 +545,11 @@
                     <li>Conception / Architecture front-end</li>
                   </ul>
                   <p>Ouverture au grand public (B2B 🡒 B2C)</p>
-                  <p>Facturation automatique et mitigation de la fraude</p>
+                  <p>Facturation automatique et systèmes anti-fraude</p>
                   <p>Documentation et assistance support</p>
                   <p>Recrutement et lead technique</p>
                   <p>
-                    <u>Stack</u> : Vue / Vuetify / VueX, Python / DRF, NodeJS / Express, GraphQL, WebRTC
+                    <u>Stack</u> : Vue / Vuetify / VueX, Python / DRF, Node.js / Express, GraphQL, WebRTC
                   </p>
                 </div>
               </li>
@@ -550,7 +618,7 @@
                     <h4>Ingénieur en chimie des matériaux</h4>
                   </div>
                   <div class="section--sub-heading">
-                    Ecole Nationale Supérieure de Chimie de Montpellier,
+                    École Nationale Supérieure de Chimie de Montpellier,
                     Montpellier
                   </div>
                 </div>

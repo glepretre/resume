@@ -10,7 +10,7 @@ Pure HTML/CSS resume
 
 ## PDF Export
 
-* Directly print from the browser
+* PDF export is scripted via `./export-pdf.sh` and based on Google Chrome (or Chromium).
 
 **[Download PDF 📄](https://raw.githubusercontent.com/glepretre/resume/main/dist/CV%20Gilles%20Lepretre.pdf)**
 

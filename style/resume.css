@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato-regular-latin.woff2") format("woff2");
+}
+
 :root {
   --accent-color: #043442;
 }
@@ -42,7 +49,18 @@ body {
   height: 100%
 }
 
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
 @media print {
+  html,
+  body {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
   body {
     padding: 0;
   }
@@ -395,7 +413,7 @@ hr {
   overflow: hidden;
   position: absolute;
   color: white;
-  padding: 29px 0 0 20px;
+  padding: 20px 0 0 20px;
   width: 215px;
   height: 100%;
 }
@@ -407,7 +425,7 @@ hr {
 .avatar {
   display: inline-block;
   padding: 0;
-  margin: 0 0 15px 9px;
+  margin: 0 0 10px 10px;
   height: 155px;
   width: 155px;
   border-radius: 50%;
@@ -457,6 +475,35 @@ hr {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.contact-list {
+  line-height: 16px;
+}
+
+.sidebar--item.contact-list--item {
+  align-items: center;
+  display: flex;
+  gap: 6px;
+  padding-top: 3px;
+}
+
+.contact-list--icon {
+  color: white;
+  flex: 0 0 18px;
+  font-size: 16px;
+  margin-right: 0;
+  text-align: center;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .sidebar--item {
@@ -518,6 +565,13 @@ hr {
 
 i.mdi {
   margin-right: 5px;
+}
+
+.sidebar--icon {
+  height: 1em;
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 1em;
 }
 
 .sidebar--bg,
